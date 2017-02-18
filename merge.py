@@ -31,9 +31,13 @@ def pungi(arr,l,r):
 
 import time
 arr=raw_input().split(' ')
-n=len(arr)
-for i in xrange(0,len(arr)): arr[i]=int(arr[i])
+n=len(arr)-1
+for i in xrange(0,len(arr)):
+    try:
+        arr[i]=int(arr[i])
+    except: pass
+arr=arr[0:-1]
 tic=time.clock()
 pungi(arr,0,n-1)
 print(arr)
-print(time.clock()-tic)
+print("Time elapsed: "+str(time.clock()-tic))

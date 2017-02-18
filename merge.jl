@@ -38,7 +38,9 @@ function pungi(arr,l,r)
 end
 
 
+
 arr=map(x->parse(Int,x),split(readline(STDIN)))
+arr=arr[1:end-1]
 n=size(arr)[1]
 tic()
 pungi(arr,1,n)
