@@ -67,8 +67,8 @@ int main()
   n=count;
   clock_t launch = clock();
   pungi(arr,0,n-1);
-  for (int i=0; i<n; i++)
-    printf("%d ",arr[i]);
+/*  for (int i=0; i<n; i++)
+    printf("%d ",arr[i]);*/
   clock_t done = clock();
   double diff = (double)(done - launch) / CLOCKS_PER_SEC;
   printf("\nTime elapsed:%f\n",diff);

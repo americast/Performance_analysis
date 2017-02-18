@@ -39,5 +39,5 @@ for i in xrange(0,len(arr)):
 arr=arr[1:-1]
 tic=time.clock()
 pungi(arr,0,n-1)
-print(arr)
+#print(arr)
 print("Time elapsed: "+str(time.clock()-tic))

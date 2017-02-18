@@ -44,5 +44,5 @@ arr=arr[2:end-1]
 n=size(arr)[1]
 tic()
 pungi(arr,1,n)
-println(arr)
+#println(arr)
 toc()
