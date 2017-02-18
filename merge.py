@@ -31,12 +31,12 @@ def pungi(arr,l,r):
 
 import time
 arr=raw_input().split(' ')
-n=len(arr)-1
+n=len(arr)-2
 for i in xrange(0,len(arr)):
     try:
         arr[i]=int(arr[i])
     except: pass
-arr=arr[0:-1]
+arr=arr[1:-1]
 tic=time.clock()
 pungi(arr,0,n-1)
 print(arr)

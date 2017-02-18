@@ -51,18 +51,20 @@ void pungi(int arr[],int l,int r)
 
 int main()
 {
-  int *arr=(int *)malloc(sizeof(int));
-  int n=0;
+  int n;
+  scanf("%d",&n);
+  int arr[n];
+  int count=0;
   while(1)
   {
     int num;
     scanf("%d",&num);
     if (num==-1)
       break;
-    n++;
-    arr=(int *)realloc(arr,sizeof(int)*n);
-    arr[n-1]=num;
+    count++;
+    arr[count-1]=num;
   }
+  n=count;
   clock_t launch = clock();
   pungi(arr,0,n-1);
   for (int i=0; i<n; i++)
