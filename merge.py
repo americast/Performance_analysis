@@ -1,3 +1,4 @@
+from __future__ import print_function
 def man(arr, beg, mid1, mid2, endn):
   temp=[]
   i=beg; j=mid2
@@ -27,8 +28,9 @@ def pungi(arr,l,r):
     pungi(arr,l,((l+r)/2))
     pungi(arr,(1+((l+r)/2)),r)
     man(arr,l,((l+r)/2),((l+r)/2)+1,r)
+    
 
-print ("------\nExecuting with python...")
+print ("Executing with python...",end='')
 import time
 arr=raw_input().split(' ')
 n=len(arr)-2
@@ -40,5 +42,4 @@ arr=arr[1:-1]
 tic=time.clock()
 pungi(arr,0,n-1)
 #print(arr)
-print("Time elapsed: "+str(time.clock()-tic))
-print("Executed with python. No. of items: "+str(n)+"\n------\n")
+print("elapsed time: "+str(time.clock()-tic))

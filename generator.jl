@@ -1,7 +1,7 @@
-print("How many numbers would you like to generate? ")
 n=parse(Int,readline(STDIN))
-print("\nWhat should be the maximum no (minimum 1).? ")
-k=parse(Int,readline(STDIN))
+println("No. of numbers: $(n)")
+#print("\nWhat should be the maximum no (minimum 1).? ")
+k=100000
 open("data.txt", "w") do f
   write(f, "$(n) ");
   for i in 1:n+1
@@ -12,4 +12,3 @@ open("data.txt", "w") do f
     end
   end
 end
-println("Done!")

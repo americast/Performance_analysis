@@ -1,0 +1,42 @@
+No. of numbers: 10
+Executing with C...elapsed time:0.000002
+Executing with python...elapsed time: 4.3e-05
+Executing with Julia...elapsed time: 0.074253128 seconds
+
+
+No. of numbers: 100
+Executing with C...elapsed time:0.000024
+Executing with python...elapsed time: 0.000648
+Executing with Julia...elapsed time: 0.074252633 seconds
+
+
+No. of numbers: 1000
+Executing with C...elapsed time:0.000340
+Executing with python...elapsed time: 0.013351
+Executing with Julia...elapsed time: 0.074504706 seconds
+
+
+No. of numbers: 10000
+Executing with C...elapsed time:0.003821
+Executing with python...elapsed time: 0.083051
+Executing with Julia...elapsed time: 0.087493696 seconds
+
+
+No. of numbers: 100000
+Executing with C...elapsed time:0.043853
+Executing with python...elapsed time: 0.888066
+Executing with Julia...elapsed time: 0.277591254 seconds
+
+
+No. of numbers: 1000000
+./runner.sh: line 3:  3923 Segmentation fault      (core dumped) ./a.out < data.txt
+Executing with python...elapsed time: 10.906499
+Executing with Julia...elapsed time: 1.93354504 seconds
+
+
+No. of numbers: 10000000
+./runner.sh: line 3:  3940 Segmentation fault      (core dumped) ./a.out < data.txt
+Executing with python...elapsed time: 135.07814
+Executing with Julia...elapsed time: 39.656784377 seconds
+
+

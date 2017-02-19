@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void man(int arr[], int beg, int mid1, int mid2, int endn)
+void man(long arr[], long beg, long mid1, long mid2, long endn)
 {
-  int temp[endn-beg+1];
-  int i=beg, j=mid2, count=0;
+  long temp[endn-beg+1];
+  long i=beg, j=mid2, count=0;
   while (1)
   {
     if (i>mid1 || j>endn)
@@ -32,14 +32,14 @@ void man(int arr[], int beg, int mid1, int mid2, int endn)
     j+=1; count++;
   }
   j=0;
-  for (int i=beg; i<=endn; i++)
+  for (long i=beg; i<=endn; i++)
   {
     arr[i]=temp[j];
     j+=1;
   }
 }
 
-void pungi(int arr[],int l,int r)
+void pungi(long arr[],long l,long r)
 {
   if (l<r)
   {
@@ -51,15 +51,15 @@ void pungi(int arr[],int l,int r)
 
 int main()
 {
-  printf("\n------\nExecuting with C...");
-  int n;
-  scanf("%d",&n);
-  int arr[n];
-  int count=0;
+  printf("Executing with C...");
+  long n;
+  scanf("%ld",&n);
+  long arr[n];
+  long count=0;
   while(1)
   {
-    int num;
-    scanf("%d",&num);
+    long num;
+    scanf("%ld",&num);
     if (num==-1)
       break;
     count++;
@@ -68,10 +68,9 @@ int main()
   n=count;
   clock_t launch = clock();
   pungi(arr,0,n-1);
-/*  for (int i=0; i<n; i++)
+/*  for (long i=0; i<n; i++)
     printf("%d ",arr[i]);*/
   clock_t done = clock();
   double diff = (double)(done - launch) / CLOCKS_PER_SEC;
-  printf("\nTime elapsed:%f\n",diff);
-  printf("Executed with C. No. of items: %d\n------\n\n",n);
+  printf("elapsed time:%f\n",diff);
 }

@@ -3,3 +3,4 @@ gcc merge.c
 ./a.out < data.txt
 python merge.py <data.txt
 julia merge.jl<data.txt
+printf "\n\n"
