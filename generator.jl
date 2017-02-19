@@ -1,5 +1,5 @@
 n=parse(Int,readline(STDIN))
-println("No. of numbers: $(n)")
+println("No. of numbers: 10e$(div(n,10))")
 #print("\nWhat should be the maximum no (minimum 1).? ")
 k=100000
 open("data.txt", "w") do f
