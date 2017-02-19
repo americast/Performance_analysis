@@ -73,5 +73,5 @@ int main()
   clock_t done = clock();
   double diff = (double)(done - launch) / CLOCKS_PER_SEC;
   printf("\nTime elapsed:%f\n",diff);
-  printf("\Executed with C. No. of items: %d\n------\n\n",n);
+  printf("Executed with C. No. of items: %d\n------\n\n",n);
 }

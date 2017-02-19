@@ -38,7 +38,7 @@ function pungi(arr,l,r)
 end
 
 
-println("------\nExecuting with Julia")
+println("------\nExecuting with Julia...")
 arr=map(x->parse(Int,x),split(readline(STDIN)))
 arr=arr[2:end-1]
 n=size(arr)[1]
