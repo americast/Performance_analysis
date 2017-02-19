@@ -51,6 +51,7 @@ void pungi(int arr[],int l,int r)
 
 int main()
 {
+  printf("\n------\nExecuting with C...");
   int n;
   scanf("%d",&n);
   int arr[n];
@@ -72,4 +73,5 @@ int main()
   clock_t done = clock();
   double diff = (double)(done - launch) / CLOCKS_PER_SEC;
   printf("\nTime elapsed:%f\n",diff);
+  printf("\Executed with C. No. of items: %d\n------\n\n",n);
 }

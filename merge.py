@@ -28,7 +28,7 @@ def pungi(arr,l,r):
     pungi(arr,(1+((l+r)/2)),r)
     man(arr,l,((l+r)/2),((l+r)/2)+1,r)
 
-
+print ("------\nExecuting with python...")
 import time
 arr=raw_input().split(' ')
 n=len(arr)-2
@@ -41,3 +41,4 @@ tic=time.clock()
 pungi(arr,0,n-1)
 #print(arr)
 print("Time elapsed: "+str(time.clock()-tic))
+print("Executed with python. No. of items: "+str(n)+"\n------\n")

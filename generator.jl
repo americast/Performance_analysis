@@ -1,11 +1,11 @@
-print("How many numbers would you like to generate?")
+print("How many numbers would you like to generate? ")
 n=parse(Int,readline(STDIN))
-print("\nWhat should be the maximum no (minimum 1).?")
+print("\nWhat should be the maximum no (minimum 1).? ")
 k=parse(Int,readline(STDIN))
 open("data.txt", "w") do f
   write(f, "$(n) ");
-  for i in 1:n
-    if i!=n
+  for i in 1:n+1
+    if i!=n+1
       write(f, "$(rand(1:k)) ")
     else
       write(f, "-1");

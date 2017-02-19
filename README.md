@@ -3,4 +3,4 @@
 WORK IN PROGRESS
 -------------
 
-Analyse performace of merge sort in C, Python and Julia.
+Analyze performace of merge sort in C, Python and Julia.
