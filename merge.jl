@@ -6,19 +6,19 @@ function man(arr, beg, mid1, mid2, endn)
       break
     end
     if (arr[i]<=arr[j])
-      push!(temp,arr[i])
+      append!(temp,arr[i])
       i+=1; continue
     else
-      push!(temp,arr[j])
+      append!(temp,arr[j])
       j+=1; continue
     end
   end
   while (i<=mid1)
-    push!(temp,arr[i])
+    append!(temp,arr[i])
     i+=1
   end
   while(j<=endn)
-    push!(temp,arr[j])
+    append!(temp,arr[j])
     j+=1
   end
   j=1
